@@ -23,7 +23,7 @@ public class spawnEvent implements Listener{
 
                 for (Player p : playerList) {
                     if (p.getAddress().getAddress().getHostAddress().equals(ip)) {
-                        //only cancel the event for the first player with the same ip address
+
                         if (player != p) {
                             event.setCancelled(true);
                             player.sendMessage("You have been caught using an alt account to farm spawners!");
@@ -31,8 +31,7 @@ public class spawnEvent implements Listener{
                         else{
                             player.sendMessage("You are farming spawners, please stop");
                         }
-                        //player.sendMessage("Warning, another player with the same IP address is already online!");
-                        //
+
                         player.sendMessage("haha no lets not break the economy with fifty alt accounts");
                     }
                 }

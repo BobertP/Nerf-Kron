@@ -15,16 +15,15 @@ public class playerJoin implements Listener{
 
         Player player = event.getPlayer();
         String ip = player.getAddress().getAddress().getHostAddress();
-        //create an arraylist of all the players on the server
         ArrayList<Player> playerList = new ArrayList<Player>();
         playerList.add(player);
         player.sendMessage("Test" + playerList);
-        //if the player joining the server has the same ip address as another player on the server, send a warning message
+
 
 
         for (Player p : playerList) {
             if (p.getAddress().getAddress().getHostAddress().equals(ip)) {
-                //send warning message
+
                 player.sendMessage("Warning, another player with the same IP address is already online!");
             }
 
