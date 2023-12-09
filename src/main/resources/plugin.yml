@@ -1,0 +1,4 @@
+name: NerfKron
+version: '${project.version}'
+main: com.icloud.rpphillips21.nerfkron.Plugin
+api-version: '1.20'
